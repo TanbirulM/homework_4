@@ -36,7 +36,9 @@ nav a{
 /*Your Code Here*/
 /*Write selector/rule property to add an underline when
 links in the navigation are in the hover or focus state.*/
-
+nav a:hover{
+  text-decoration: underline;
+}
 
 .skip a{
   background: white;
@@ -47,10 +49,16 @@ links in the navigation are in the hover or focus state.*/
   z-index: 1;
 
   /*Your code here*/
+  position: absolute;
+  top: -40px;
 }
 
 /*Your Code Here*/
 /*Write selector/rule property to position the skip class element*/
+
+.skip a:focus{
+  top: 0px;
+}
 
 /*Your Code Here*/
 /*Write selector/rule property to style all elements when in focus*/
@@ -73,7 +81,10 @@ footer{
 
 
 .container{
-  /*Your Code Here*/
+  display: grid;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: auto auto auto auto auto
 }
 
 header{
